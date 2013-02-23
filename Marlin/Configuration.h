@@ -107,9 +107,9 @@
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 
 // Hef's hotend
-    #define  DEFAULT_Kp 33.01
-    #define  DEFAULT_Ki 1.06
-    #define  DEFAULT_Kd 169.80
+    #define  DEFAULT_Kp 27.98
+    #define  DEFAULT_Ki 1.15
+    #define  DEFAULT_Kd 170.07
 // Ultimaker
    // #define  DEFAULT_Kp 22.2
    // #define  DEFAULT_Ki 1.08  
