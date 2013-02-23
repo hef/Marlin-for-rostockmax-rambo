@@ -8,8 +8,8 @@
 //User specified version info of THIS file to display in [Pronterface, etc] terminal window during startup.
 //Implementation of an idea by Prof Braino to inform user that any changes made
 //to THIS file by the user have been successfully uploaded into firmware.
-#define STRING_VERSION_CONFIG_H "2012-09-21" //Personal revision number for changes to THIS file.
-#define STRING_CONFIG_H_AUTHOR "johnoly99 and johnnyR from UltiMachine" //Who made the changes.
+#define STRING_VERSION_CONFIG_H "$Id$" //Personal revision number for changes to THIS file.
+#define STRING_CONFIG_H_AUTHOR "Hef@PS1, johnoly99@seemecnc, and johnnyR@UltiMachine" //Who made the changes.
 
 // This determines the communication speed of the printer
 #define BAUDRATE 250000
@@ -106,12 +106,10 @@
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 
-// SeeMeCNC "Steve's Hot-End"
-    #define  DEFAULT_Kp 46.78
-    #define  DEFAULT_Ki 2.68 
-    #define  DEFAULT_Kd 204 
-
-
+// Hef's hotend
+    #define  DEFAULT_Kp 33.01
+    #define  DEFAULT_Ki 1.06
+    #define  DEFAULT_Kd 169.80
 // Ultimaker
    // #define  DEFAULT_Kp 22.2
    // #define  DEFAULT_Ki 1.08  
@@ -187,10 +185,10 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define DISABLE_Z false
 #define DISABLE_E false // For all extruders
 
-#define INVERT_X_DIR true    // for Mendel set to false, for Orca set to true
+#define INVERT_X_DIR false    // for Mendel set to false, for Orca set to true
 #define INVERT_Y_DIR true   // for Mendel set to true, for Orca set to false
 #define INVERT_Z_DIR true   // for Mendel set to false, for Orca set to true
-#define INVERT_E0_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
+#define INVERT_E0_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E1_DIR false    // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E2_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
 
@@ -220,11 +218,11 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // For Rostock this means top and center of the cartesian print volume.
 #define X_HOME_POS 0
 #define Y_HOME_POS 0
-#define Z_HOME_POS 345.0 // Distance between nozzle and print surface after homing.
+#define Z_HOME_POS 671.5 // Distance between nozzle and print surface after homing.
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
-#define HOMING_FEEDRATE {500, 500, 500, 0}  // set the homing speeds (mm/min)
+#define HOMING_FEEDRATE {1000, 1000, 1000, 0}  // set the homing speeds (mm/min)
 
 // default settings 
 
