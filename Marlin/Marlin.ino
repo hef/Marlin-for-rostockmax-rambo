@@ -66,7 +66,7 @@
 #define DELTA_CARRIAGE_OFFSET 35.0 // mm
 
 // Effective horizontal distance bridged by diagonal push rods.
-#define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET-1)
+#define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET-1.15)
 
 // Effective X/Y positions of the three vertical towers.
 #define SIN_60 0.8660254037844386
