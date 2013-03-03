@@ -218,7 +218,8 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // For Rostock this means top and center of the cartesian print volume.r
 #define X_HOME_POS 0
 #define Y_HOME_POS 0
-#define Z_HOME_POS 364.35 // Distance between nozzle and print surface after homing.
+//#define Z_HOME_POS 364.45 // Distance between nozzle and print surface after homing.
+#define Z_HOME_POS 361.85
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
@@ -258,7 +259,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 //#define SDSUPPORT // Enable SD Card Support in Hardware Console
 
 //#define ULTIMAKERCONTROLLER //as available from the ultimaker online store.
-//#define ULTIPANEL  //the ultipanel as on thingiverse
+#define ULTIPANEL  //the ultipanel as on thingiverse
 
 
 #ifdef ULTIMAKERCONTROLLER    //automatic expansion
@@ -268,7 +269,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
  
 
 #ifdef ULTIPANEL
-//  #define NEWPANEL  //enable this if you have a click-encoder panel
+  #define NEWPANEL  //enable this if you have a click-encoder panel
   #define SDSUPPORT
   #define ULTRA_LCD
   #define LCD_WIDTH 20
